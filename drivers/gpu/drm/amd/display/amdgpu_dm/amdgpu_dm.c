@@ -9042,10 +9042,6 @@ static void amdgpu_dm_connector_add_common_modes(struct drm_encoder *encoder,
 	int i;
 	int n;
 
-	if ((connector->connector_type != DRM_MODE_CONNECTOR_eDP) &&
-	    (connector->connector_type != DRM_MODE_CONNECTOR_LVDS))
-		return;
-
 	n = ARRAY_SIZE(common_modes);
 
 	for (i = 0; i < n; i++) {
